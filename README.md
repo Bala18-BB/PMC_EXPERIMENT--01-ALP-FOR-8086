@@ -1,8 +1,6 @@
 # EXPERIMENT--01-ALP-FOR-8086
-## Name :
-## Roll no :
-## Date of experiment :
-
+## Name : Balanagaraj G
+## Roll no : 212225040043
 
 
 
@@ -76,27 +74,57 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 ## Programs for arithmetic  operations (16 bit)
+org 100h
 
+mov BX,0FFFFH; mov AX,0FFFFH; ADD Ax,BX; MOV [2000H],AX;
+
+MOV AX,4444H; MOV CX,3246H; SUB AX,CX; MOV [2002H],AX;
+
+MOV AX,4357H; MOV BX,0999H; MUL CX; MOV [2004],AX;
+
+MOV AX,0005H; MOV BX,5000H; DIV BX; MOV [2006H],AX;
+
+ret
 
 
 ## Output  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/92d0957e-f4d7-4b3e-8772-c320cb50705f" />
+
+
 
 
 
 
 
 ## Programs for logical  operations (16 bit)
+org 100h
 
+mov AX,4444H mov BX,3246H and AX,BX mov [2000H],AX
+
+mov AX,4444H mov BX,3246H or AX,BX mov [2002H],AX
+
+mov AX,4444H mov BX,3246H xor AX,BX mov [2004H],AX
+
+mov AX,4444H not AX mov [2006H],AX
+
+mov AX,4444H mov BX,3246H and AX,BX not AX mov [2008H],AX
+
+mov AX,4444H mov BX,3246H or AX,BX not AX mov [2010H],AX
+
+mov AX,4444H mov BX,3246H xor AX,BX not AX mov [2012H],AX
+
+ret
 
 
 ## Output  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/99c493e2-9472-4583-84b8-66f68152586b" />
 
 
 
 
 ## Result :
  
-
+Thus ,the program was executed successfully.
 
 
 
